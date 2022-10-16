@@ -62,7 +62,7 @@ function showData(response) {
 
   //if(city==="paris") {alert("It is current " + weather[0].temp + " degrees in " + city + " with a humidity of " + weather[0].humidity + "%")}
   let emoji = "🥶";
-  if (tempofcity >= 14) {
+  if (tempofcity >= 17) {
     emoji = "🥵";
   }
 
