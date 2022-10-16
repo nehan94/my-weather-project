@@ -4,10 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Weatherproject</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+      h1,
+      h2,
+      h5,
+      h6 {
+        text-decoration: wavy;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #fcf4d9;
+      }
+      .col-2 {
+        text-decoration: wavy;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #fcf4d9;
+      }
+
+      body {
+        background-color: #166157;
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
+    <form>
+      <input
+        class="place"
+        id="placeinput"
+        type="text"
+        placeholder="Berlin..."
+      />
+      <input class="button" id="find" type="submit" value="Find" />
+    </form>
+    <br />
+    <br />
+
+    <div class="today">
+      <div class="row">
+        <div class="col-9">
+          <h2 id="headline">☀️ Search for real time weather updates here ☑️</h2>
+          <h6>Date today</h6>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-2" id="high"><h5>⬆️ High:</h5></div>
+        <div class="col-2" id="low"><h5>⬇️ Low:</h5></div>
+        <div class="col-2" id="feels"><h5>🤐 Feels like:</h5></div>
+      </div>
+    </div>
+
     <script src="java.js"></script>
   </body>
 </html>
