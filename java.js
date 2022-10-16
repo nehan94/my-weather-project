@@ -67,7 +67,7 @@ function showData(response) {
   }
 
   let searchsentence = document.querySelector("h2");
-  searchsentence.innerHTML = `${emoji} It is ${tempofcity}° C in ${nameplace} today`;
+  searchsentence.innerHTML = `${emoji} It is ${tempofcity}° C in ${nameplace} right now.`;
 
   let maxtempofcity = Math.round(response.data.main.temp_max);
   console.log(maxtempofcity);
