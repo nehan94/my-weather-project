@@ -83,4 +83,15 @@ function showData(response) {
   console.log(feelslike);
   let subsfeels = document.querySelector("#feels");
   subsfeels.innerHTML = `🤐 Feels Like: ${feelslike}° C`;
+
+  let windSpeed = Math.round(response.data.wind.speed);
+  console.log(windSpeed);
+  let subswind = document.querySelector("#wind");
+  console.log(subswind);
+  subswind.innerHTML = `🌬️ Wind Speed: ${windSpeed} Km/h`;
+
+  let des = response.data.weather[0].description;
+  console.log(des);
+  let subdes = document.querySelector("#description");
+  subdes.innerHTML = `Description:${des}`;
 }
